@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+a:hover {
+    font-weight: bold;
+}
+/* Top Bar */
+
+header {
+    padding: 3rem 2rem;
+    background-color: #011e41;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    height: 40rem;
+    background-image: url("./resources/images/yeon-choi-oqHYQyGD9Po-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    position: absolute;
+    right: 4rem;
+    top: 15rem;
+    color: #011e41;
+    font-size: 3rem;
+}
+
+/* About */
+
+.about {
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+    color: #011e41;
+}
+
+/* Images */
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images img {
+    max-width: 30%;
+}
+
+/* Event Section */
+
+.events {
+    margin: 4rem 0;
+}
+
+.events h2 {
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.event-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-card {
+    width: 80%;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-card img {
+    max-width: 30%;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.left {
+    flex-direction: row;
+}
+
+.right img {
+    margin-left: 2rem;
+}
+
+.left img {
+    margin-right: 2rem;
+}
+
+.image-card h3 {
+    margin-bottom: 2rem;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Testimonials */
+
+.testimonials {
+    background-color: #011e41;
+    color: white;
+    padding: 2rem 3rem;
+}
+
+.testimonials h1 {
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    font-style: italic;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    background-image: url("./resources/images/ana-lanza-BTu0dpzKG-8-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.call-to-action h1 {
+    text-align: center;
+    margin-top: 12rem;
+    padding: 2rem 0;
+    color: white;
+    background-color: #011e41;
+    opacity: 0.8;
+}
+
+/* Footer */
+
+footer {
+    padding: 3rem;
+    background-color: #011e41;
+    color: white;
+}
+
+@media only screen and (max-width: 880px) {
+    .jumbotron h1 {
+        max-width: 50%;
+        top: 12rem;
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .jumbotron h1 {
+        left: 35%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem auto;
+    }
+    .jumbotron h1 {
+        font-size: 200%;
+    }
+
+    .image-card img {
+        display: none;
+    }
+
+    .image-card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .coffee {
+        background: url(./resources/images/clifford-VobvKmG-StA-unsplash.jpg);
+       
+    }
+
+    .boating {
+        background-image: url(./resources/images/zayn-shah-qeGMflvPJwY-unsplash.jpg);
+    }
+
+    .nyc {
+        background-image: url(./resources/images/juan-camilo-KRl-uJMXVDw-unsplash.jpg);
+    }
+
+    .text-block {
+        background-color: white;
+        opacity: 0.8;
+        padding: 1rem;
+    }
+}
